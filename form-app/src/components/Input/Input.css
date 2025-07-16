@@ -1,0 +1,65 @@
+/* Container */
+.text-input-container {
+  position: relative;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  font-weight: 400;
+  color: white;
+}
+
+/* Label and error message */
+label,
+span {
+  font-weight: 400;
+}
+
+/* Input field */
+.text-input {
+  padding: 6px 28px 6px 12px;
+  font-size: 16px;
+  line-height: 1.42857143;
+  font-weight: 400;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  outline: none;
+  margin-bottom: 0;
+  vertical-align: middle;
+  transition: border-color 0.3s ease;
+}
+
+.text-input:focus {
+  border-color: #56acbd;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.6) inset !important;
+  transition: all 0.25s ease 0s;
+}
+
+/* Error message */
+span {
+  color: #a94442;
+  position: absolute;
+  bottom: -20px;
+  font-size: 12px;
+}
+
+/* Autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+  transition: background-color 9999s ease-out;
+}
+
+/* Tooltip icon */
+.icon {
+  position: absolute;
+  top: -28.325px;
+  left: 278px;
+  height: 20px;
+  cursor: pointer;
+  transform: translateX(-50%);
+}

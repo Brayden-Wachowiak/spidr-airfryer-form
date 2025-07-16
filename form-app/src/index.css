@@ -1,0 +1,42 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  box-sizing: border-box;
+}
+
+/* Body and html */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #252627;
+  color: #ffffff;
+}
+
+/* Headings */
+h1 {
+  font-size: 35px;
+  font-weight: 200;
+  position: relative;
+  line-height: 1.1;
+}
+
+/* Decorative underline for h1 and h4 */
+h1::after,
+h4::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: #ffffff;
+  margin: 15px auto 0;
+}
+
+/* h4 styles */
+h4 {
+  font-weight: 400;
+}

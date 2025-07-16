@@ -1,0 +1,36 @@
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
+/* Tooltip box */
+.tooltip-box {
+  position: absolute;
+  top: calc(-100% - 68.325px);
+  left: 278px;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 14px;
+  white-space: nowrap;
+  border-radius: 0;
+  z-index: 1000;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Triangle arrow */
+.tooltip-arrow {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #333;
+}
